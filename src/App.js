@@ -1,5 +1,4 @@
 import React from 'react'
-import { useSpring, animated} from 'react-spring'
 import Slot from './slot'
 import Slot2 from './slot'
 import Slot3 from './slot'
