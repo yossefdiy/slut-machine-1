@@ -1,6 +1,5 @@
 import React,{useState} from "react"
 import {animated,useTransition} from 'react-spring'
-const list=['😐', '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱']
 
 
  export default   function Slot() {
