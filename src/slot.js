@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import {animated,config,useTransition} from 'react-spring'
+import {animated,useTransition} from 'react-spring'
 const list=['😐', '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱']
 
 
