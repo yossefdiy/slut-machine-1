@@ -1,10 +1,9 @@
 import React,{useState} from "react"
-import {animated,config,useTransition} from 'react-spring';
-const list=['😐', '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱']
+import {animated,useTransition} from 'react-spring';
 
 
  export default   function Slot2() {
-  const [list1,setwin ]=useState(['j', '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱'])
+  const list1 =(['j', '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱'])
   const [toggle, set] = useState(false)
   const transitions = useTransition(toggle, {
     from: { position: 'center', opacity: 1 },
