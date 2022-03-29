@@ -10,9 +10,9 @@ export default function App() {
     <div className='app'>
         <div>slot machina***</div>
         <div className='grid'>
-        <div><Slot/></div>
-        <div><Slot2/></div>
-        <div><Slot3/></div>
+        <button><Slot/></button>
+        <button><Slot2/></button>
+        <button><Slot3/></button>
        
        
         </div>
