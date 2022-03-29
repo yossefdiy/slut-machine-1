@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import {animated,useTransition,config} from 'react-spring'
+import {animated,useTransition} from 'react-spring'
 
 
  export default   function Slot() {
