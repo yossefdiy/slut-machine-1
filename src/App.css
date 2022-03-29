@@ -20,3 +20,7 @@ div.grid{
     grid-template-columns: 200% 200% 200%;
     gap:500;
 }
+button{
+    width: 100px;
+    height: 100px;
+}
