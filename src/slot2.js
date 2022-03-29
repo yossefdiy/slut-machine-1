@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import {animated,useTransition,config} from 'react-spring';
+import {animated,useTransition} from 'react-spring';
 
 
  function Slot2() {
@@ -9,12 +9,9 @@ import {animated,useTransition,config} from 'react-spring';
     from: { position: 'center', opacity: 0},
     enter: { opacity: 1 },
     leave: { opacity: 1},
-    config:{ duration: 100 },
-
-    reverse: toggle,
-    
-  
-    onRest: () => set(!toggle),
+   reverse: toggle,
+   config:{ duration: 100 },
+   onRest: () => set(!toggle),
   })
 
    
