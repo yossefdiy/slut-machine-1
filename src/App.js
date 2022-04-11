@@ -1,26 +1,46 @@
-import React from 'react'
-import Slot from './slot'
+import React,{useState} from 'react'
 import Slot2 from './slot2'
-import Slot3 from './slot3'
 import './App.css'
 
-export default function App() {
+export default function App(){
+ //const [listop,set2]=useState(['🧳','🌂', '☂️','👓','🧶','👓','🕶','🥽','🥼','🦺','😑','😬','🙄','😯','😦','😧','😮','😲','🥱'])
+
+
+
   return (
-    
-    <div className='app'>
-        <div>slot machina***</div>
-        <div className='grid'>
-        <button><Slot/></button>
-        <button><Slot2/></button>
-        <button><Slot3/></button>
-       
-       
-        </div>
-        
-        
-        
+ 
+  <div className='app'>
+  <header>slot machine</header>
+  <div className='grid'>
+  <Slot2/>
+ 
+
+  
+
+ 
+
+
+  </div>
+
+     </div>
      
-    </div>
+   
+
+
+    
+
+         
+      
+
+     
+       
+      
+        
+    
+       
+        
+
+  
     
   )
 }
