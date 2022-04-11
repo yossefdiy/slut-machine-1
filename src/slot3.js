@@ -9,10 +9,8 @@ import {animated,useTransition} from 'react-spring'
     from: { position: 'center', opacity: 0},
     enter: { opacity: 1 },
     leave: { opacity: 1},
-    config:{ duration: 100 },
+    config:{ duration: 200 },
     reverse: toggle,
-    
-  
     onRest: () => set(!toggle),
   })
 
@@ -26,7 +24,7 @@ import {animated,useTransition} from 'react-spring'
           fontSize:'50px'
         }}>
        {list3[Math.floor(Math.random() *20)]}
-
+     
       </animated.button>
     ) : ''
     

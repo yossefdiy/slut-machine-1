@@ -1,36 +1,26 @@
-import React,{useState} from "react"
-import {animated,useTransition} from 'react-spring';
+import React,{useState}from 'react'
+import './App.css' 
+function Slot2(){
+    const list=['♠','♥','♦','♣','♤','♡','♢','♧']
+    const list1=['♠','♥','♦','♣','♤','♡','♢','♧']
+    const list2=['♠','♥','♦','♣','♤','♡','♢','♧']
 
 
- function Slot2() {
-  const list2 =['🧳','🌂', '☂️',' 🪡','🧶', '👓','🕶' ,'🥽', '🥼' ,'🦺' , '😑' ,'😬', '🙄', '😯', '😦', '😧', '😮', '😲', '🥱']
-  const [toggle, set] = useState(false)
-  const transitions = useTransition(toggle, {
-    from: { position: 'center', opacity: 0},
-    enter: { opacity: 1 },
-    leave: { opacity: 1},
-   reverse: toggle,
-   config:{ duration: 100 },
-   onRest: () => set(!toggle),
-  })
-
-   
-  return transitions(({ opacity }, item) =>
-    item ? (
-      <animated.button
-        style={{
-          position: 'absolute',
-          opacity: opacity.to({ range: [1.4, 1.0], output: [0, 1] }),
-          fontSize:'50px'
-        }}>
-       {list2[Math.floor(Math.random() *20)]}
-
-      </animated.button>
-    ) :''
+    const [toggle,setToggle]= useState(true)
     
+    const [counter, setCounter] = useState(0);
+if (!toggle)
     
-  )
+    counter >= 0 && setTimeout(() => setCounter(counter + 1), 150)
+    if (counter + 1) return(
+    <div className='grid2'>
+    <div  style={{color:'blue'}} className='slot' >
+         {list[Math.floor(Math.random() *8)]}</div>
+   <div style={{color:'red'}} className='slot' > {list1[Math.floor(Math.random() *8)]}</div>
+  <div style={{color:'purple'}} className='slot'> {list2[Math.floor(Math.random() *8)]}</div>
+      < button onClick={()=>setToggle(!toggle)}>spin</button>
+      </div>
+    )
   
-
 }
-export default  Slot2
+export default Slot2
