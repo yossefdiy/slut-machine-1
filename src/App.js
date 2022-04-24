@@ -1,5 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Slot2 from './slot2'
+
 import './App.css'
 
 export default function App(){
