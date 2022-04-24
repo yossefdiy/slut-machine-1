@@ -1,26 +1,25 @@
 body{
-background-color: black;
-}
-.app{
-    display:grid;
-    grid-template-columns: 15% 15% 15%;
-    border-style: double;
-    text-align: center;
-    background-color: 'blue';
-    width: 400px;
-    height: 300px;
-    margin: 0 auto;
-    align-items: ;
-    color:blueviolet;
     background-color: black;
 }
-
-div.grid{
-    display:grid;
-    grid-template-columns: 200% 200% 200%;
-    gap:500;
+.grid2{
+     display: flex;
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    background-color: cornflowerblue;
+    align-items: center;
 }
-button{
-    width: 100px;
-    height: 100px;
+.slot{
+align-items: center; 
+   display: grid;
+    margin: 0 auto;
+    font-size: 150px;
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    color: beige;
+}
+.B{
+    font-size: 150px;
 }
