@@ -92,7 +92,7 @@ export { handler }
 ```
 
 rerun and see it work!
-
+slot game https://nimble-begonia-adcf28.netlify.app/
 You are free to set up your `tsconfig.json` and `tslint` as you see fit.
 
 </details>
