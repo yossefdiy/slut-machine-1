@@ -13,7 +13,7 @@ function Slot2(){
 
     const [toggle,setToggle]= useState(true)
     const [counter, setCounter] = useState(0);
-    const  [cash, setCash]= useState(1000) 
+    let cash=1000
      var B = document.getElementById("slot");
      var a = document.getElementById("win1")
      var b = document.getElementById("win2")
@@ -40,16 +40,24 @@ function Slot2(){
      var w = document.getElementById("win3.7")
      var x = document.getElementById("win3.8")
 
-     
-  if (toggle && (list.id=a)&& (list1.id=i)&&(list2.id=q))  alert('') && <div>{setCash(1000-10)}{cash}</div>
-  if (toggle && (list.id=b)&& (list1.id=j)&&(list2.id=r)) alert('')
-  if (toggle && (list.id=c)&& (list1.id=k)&&(list2.id=s)) alert('')
-  if (toggle && (list.id=d)&& (list1.id=l)&&(list2.id=t)) alert('')
-  if (toggle && (list.id=e)&& (list1.id=m)&&(list2.id=u)) alert('')
-  if (toggle && (list.id=f)&& (list1.id=n)&&(list2.id=v)) alert('')
-  if (toggle && (list.id=g)&& (list1.id=o)&&(list2.id=w)) alert('')
-  if (toggle && (list.id=h)&& (list1.id=p)&&(list2.id=x)) alert('')
+     let zz= document.getElementById('spin')
+  if (toggle && (list.id=a)&& (list1.id=i)&&(list2.id=q)) alert('win') 
+  if (toggle && (list.id=b)&& (list1.id=j)&&(list2.id=r))  alert('win')
+  if (toggle && (list.id=c)&& (list1.id=k)&&(list2.id=s))  alert('win')
+  if (toggle && (list.id=d)&& (list1.id=l)&&(list2.id=t))  alert('win')
+  if (toggle && (list.id=e)&& (list1.id=m)&&(list2.id=u))  alert('win')
+  if (toggle && (list.id=f)&& (list1.id=n)&&(list2.id=v))  alert('win')
+  if (toggle && (list.id=g)&& (list1.id=o)&&(list2.id=w))  alert('win')
+  if (toggle && (list.id=h)&& (list1.id=p)&&(list2.id=x)) alert('win') 
 
+  if (toggle && (list.id=a)&& (list1.id=i)) alert('win') 
+  if (toggle && (list.id=b)&& (list1.id=j))  alert('win')
+  if (toggle && (list.id=c)&& (list1.id=k))  alert('win')
+  if (toggle && (list.id=d)&& (list1.id=l))  alert('win')
+  if (toggle && (list.id=e)&& (list1.id=m))  alert('win')
+  if (toggle && (list.id=f)&& (list1.id=n))  alert('win')
+  if (toggle && (list.id=g)&& (list1.id=o))  alert('win')
+  if (toggle && (list.id=h)&& (list1.id=p)) alert('win') 
 
 
 
@@ -59,11 +67,12 @@ function Slot2(){
 
 
      if (!toggle) {
-       
+      zz.style.backgroundColor='red'
+
        B.style.color="red";
        B.style.fontSize='150px';
        if (toggle)B.style.fontSize='150px' 
-    
+       if (toggle) zz.style.backgroundColor='blue'
      
   
      }
@@ -71,6 +80,7 @@ function Slot2(){
     
 
     if (!toggle)
+   
        counter >= 0 && setTimeout(() => setCounter(counter + 1), 150)
     if (counter + 1) return(
 
@@ -79,17 +89,17 @@ function Slot2(){
          {list[Math.floor(Math.random() *8)]}
         </div>
    
-      
+     
 
 
     <div style={{color:'red'}} className='slot' > {list1[Math.floor(Math.random() *8)]}</div>
     <div style={{color:'purple'}} className='slot'> {list2[Math.floor(Math.random() *8)]}</div>
-     < button onClick={()=>setToggle(!toggle)}> spin</button>
-    
+     < button style={{color:'blue'}}  id='spin' onClick={()=>setToggle(!toggle)}> spin</button>
+     {cash}
       </div>
-     
+          
     )
-   
+ 
 }
 
 export default Slot2

@@ -4,7 +4,6 @@ import Slot2 from './slot2'
 import './App.css'
 
 export default function App(){
- //const [listop,set2]=useState(['🧳','🌂', '☂️','👓','🧶','👓','🕶','🥽','🥼','🦺','😑','😬','🙄','😯','😦','😧','😮','😲','🥱'])
 
 
 
