@@ -13,7 +13,7 @@ function Slot2(){
 
     const [toggle,setToggle]= useState(true)
     const [counter, setCounter] = useState(0);
-    let cash=1000
+    let cash=2000
      var B = document.getElementById("slot");
      var a = document.getElementById("win1")
      var b = document.getElementById("win2")
