@@ -14,31 +14,31 @@ function Slot2(){
     const [toggle,setToggle]= useState(true)
     const [counter, setCounter] = useState(0);
     let cash=2000
-     var B = document.getElementById("slot");
-     var a = document.getElementById("win1")
-     var b = document.getElementById("win2")
-     var c = document.getElementById("win3")
-     var d = document.getElementById("win4")
-     var e = document.getElementById("win5")
-     var f = document.getElementById("win6")
-     var g = document.getElementById("win7")
-     var h = document.getElementById("win8")
-     var i = document.getElementById("win2.1")
-     var j = document.getElementById("win2.2")
-     var k = document.getElementById("win2.3")
-     var l = document.getElementById("win2.4")
-     var m = document.getElementById("win2.5")
-     var n = document.getElementById("win2.6")
-     var o = document.getElementById("win2.7")
-     var p = document.getElementById("win2.8")
-     var q = document.getElementById("win3.1")
-     var r= document.getElementById("win3.2")
-     var s = document.getElementById("win3.3")
-     var t = document.getElementById("win3.4")
-     var u = document.getElementById("win3.5")
-     var v = document.getElementById("win3.6")
-     var w = document.getElementById("win3.7")
-     var x = document.getElementById("win3.8")
+     let B = document.getElementById("slot");
+     let a = document.getElementById("win1")
+     let b = document.getElementById("win2")
+     let c = document.getElementById("win3")
+     let d = document.getElementById("win4")
+     let e = document.getElementById("win5")
+     let f = document.getElementById("win6")
+     let g = document.getElementById("win7")
+     let h = document.getElementById("win8")
+     let i = document.getElementById("win2.1")
+     let j = document.getElementById("win2.2")
+     let k = document.getElementById("win2.3")
+     let l = document.getElementById("win2.4")
+     let m = document.getElementById("win2.5")
+     let n = document.getElementById("win2.6")
+     let o = document.getElementById("win2.7")
+     let p = document.getElementById("win2.8")
+     let q = document.getElementById("win3.1")
+     let r= document.getElementById("win3.2")
+     let s = document.getElementById("win3.3")
+     let t = document.getElementById("win3.4")
+     let u = document.getElementById("win3.5")
+     let v = document.getElementById("win3.6")
+     let w = document.getElementById("win3.7")
+     let x = document.getElementById("win3.8")
 
      let zz= document.getElementById('spin')
   if (toggle && (list.id=a)&& (list1.id=i)&&(list2.id=q)) alert('win') 
@@ -83,23 +83,28 @@ function Slot2(){
    
        counter >= 0 && setTimeout(() => setCounter(counter + 1), 150)
     if (counter + 1) return(
-
-    <div className='grid2'>
-    <div   className='slot' style={{color:'green'}} id='slot' >
-         {list[Math.floor(Math.random() *8)]}
-        </div>
    
-     
+    
+    <><div className='grid2'>
+
+          <div className='slot' style={{ color: 'green' }} id='slot'>
+
+             {list[Math.floor(Math.random() * 8)]}
+
+          </div>
 
 
-    <div style={{color:'red'}} className='slot' > {list1[Math.floor(Math.random() *8)]}</div>
-    <div style={{color:'purple'}} className='slot'> {list2[Math.floor(Math.random() *8)]}</div>
-     < button style={{color:'blue'}}  id='spin' onClick={()=>setToggle(!toggle)}> spin</button>
-     {cash}
-      </div>
-          
-    )
- 
+         
+          <div style={{ color: 'red' }} className='slot'> {list1[Math.floor(Math.random() * 8)]}</div>
+
+          <div style={{ color: 'purple' }} className='slot'> {list2[Math.floor(Math.random() * 8)]}</div>
+
+          {cash}
+          <button className='btn' style={{ color: 'blue'} } id='spin' onClick={() => setToggle(!toggle)}> spin</button>
+
+       <></></div><div></div></>  
+    );
+   
 }
 
 export default Slot2
