@@ -99,9 +99,10 @@ function Slot2(){
 
           <div style={{ color: 'purple' }} className='slot'> {list2[Math.floor(Math.random() * 8)]}</div>
 
-          {cash}
+          
 
-       <></></div>          <button className='btn' style={{ color: 'blue'} } id='spin' onClick={() => setToggle(!toggle)}> spin</button>
+       <></></div><button className='btn' style={{ color: 'blue'} } id='spin' onClick={() => setToggle(!toggle)}> spin</button>
+       {cash}
 <div></div></>  
     );
    
