@@ -70,8 +70,8 @@ function Slot2(){
       zz.style.backgroundColor='red'
 
        B.style.color="red";
-       B.style.fontSize='150px';
-       if (toggle)B.style.fontSize='150px' 
+       B.style.fontSize='50px';
+       if (toggle)B.style.fontSize='50px' 
        if (toggle) zz.style.backgroundColor='blue'
      
   
